@@ -1,0 +1,49 @@
+body {
+  background-color: #f0f0f0;
+}
+
+#canvas {
+  height: 100%;
+  width: 100%;
+  margin: 40px;
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+.backand {
+  border: 1px #f0f0f0 solid;
+  background-color: #fff;
+  position: absolute;
+  opacity: 1;
+  display: none;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 30px 10px #f0f0f0;
+  left: 600px;
+  top: 500px;
+  width: 150px;
+  height: 150px;
+}
+
+.logo {
+  border: 1px #f0f0f0 solid;
+  background-color: #fff;
+  position: absolute;
+  opacity: 1;
+  display: none;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 30px 10px #f0f0f0;
+}
+
+.logo>img {
+  max-width: 80%;
+}
