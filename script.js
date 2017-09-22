@@ -64,8 +64,8 @@ Ball.prototype.renderLogos = function (width, height) {
       .css({ transform: 'scale(0.9,0.9)' }).animate({
         opacity: '-=.5',
         transform: 'scale(50%,50%)',
-        left: (this.width / 2) - 110,
-        top: (this.height / 2) - 110
+        left: (this.width / 2)-(newLogo.node.width()/2),
+        top: (this.height / 2)-(newLogo.node.height()/2)
       },
       2500, 'linear', function () {
         jQuery(this).fadeOut(300);
@@ -95,8 +95,8 @@ Ball.prototype.createLogo = function (spec) {
 Ball.prototype.createParentLogo = function (spec) {
   var b = jQuery('<div class="parent-ball"><img src="' + this.iconPth + '/15.png" /></div>');
   b.css({
-    left: (this.width / 2) - 110,
-    top: (this.height / 2) - 110
+    left: (this.width / 2) - 100,
+    top: (this.height / 2) - 100
   })
   b.appendTo(this.container);
 };
