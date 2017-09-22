@@ -2,7 +2,7 @@ body {
   background-color: #f0f0f0;
 }
 
-#canvas {
+#animation-container {
   height: 100%;
   width: 100%;
   margin: 40px;
@@ -10,7 +10,7 @@ body {
   background-color: #f0f0f0;
 }
 
-.backand {
+#animation-container .parent-ball {
   border: 1px #f0f0f0 solid;
   background-color: #fff;
   position: absolute;
@@ -24,12 +24,13 @@ body {
   text-align: center;
   box-shadow: 0 0 30px 10px #f0f0f0;
   left: 600px;
-  top: 500px;
-  width: 150px;
-  height: 150px;
+  top: 200px;
+  width: 220px;
+  height: 220px;
+  animation: skewing 2s 1.5s ease-in-out infinite;
 }
 
-.logo {
+#animation-container .moving-ball {
   border: 1px #f0f0f0 solid;
   background-color: #fff;
   position: absolute;
@@ -44,6 +45,6 @@ body {
   box-shadow: 0 0 30px 10px #f0f0f0;
 }
 
-.logo>img {
+#animation-container .moving-ball >img {
   max-width: 80%;
 }
